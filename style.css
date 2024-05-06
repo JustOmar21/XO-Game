@@ -1,0 +1,78 @@
+table {
+width: 500px;
+height: 500px;
+margin: auto;
+margin-top: 100px;
+background-color: whitesmoke;
+position: relative;
+}
+
+body {
+   background-image: url("assets/xoBG.jpg");
+}
+
+.playerInfo {
+   width: 500px;
+}
+
+.LineOver{
+   position: absolute;
+   width: 500px;
+   z-index: 1;
+   border-radius: 0;
+   transition: 1s;
+}
+
+table, td {
+   border: 2px solid black;
+}
+
+td{
+   background-size: contain;
+   transition: all 0.5s;
+   width: calc(500px/3);
+   height: calc(500px/3);
+}
+
+img{
+   object-fit: contain;
+   width: 0;
+   height: 0;
+   transition: 1s;
+}
+
+table span{
+   display: none;
+}
+
+.name::first-letter{
+   text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 600px) {
+   table {
+      width: 300px;
+      height: 300px;
+      margin: auto;
+      margin-top: 100px;
+      }
+      
+      table, td {
+         border: 2px solid black;
+      }
+      
+      td{
+         background-size: contain;
+         transition: all 0.5s;
+         width: calc(300px/3);
+         height: calc(300px/3);
+      }
+
+      img{
+         object-fit: contain;
+         width: 0;
+         height: 0;
+         transition: 1s;
+      }
+}
